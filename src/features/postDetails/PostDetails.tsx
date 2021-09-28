@@ -3,6 +3,7 @@ import _get from 'lodash/get';
 import { useLocation, useParams, useHistory } from 'react-router-dom';
 import { deletePost } from '../posts/postsSlice';
 import { useAppDispatch } from '../../app/hooks';
+import './PostDetails.css';
 
 const PostDetails = memo(() => {
   const location = useLocation();
@@ -15,9 +16,9 @@ const PostDetails = memo(() => {
   }, [dispatch, params, history]
   )
   return (
-    <div>
-      <button onClick={deletePostById}>delete</button>
-      <p className="postDetails">{_get(location, 'state.body', '')}</p>;
+    <div className="post-details">
+      <p>{_get(location, 'state.body', '')}</p>
+      <button className="delete" onClick={deletePostById}>delete</button>
     </div>
   );
 })

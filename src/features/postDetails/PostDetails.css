@@ -1,0 +1,8 @@
+.post-details {
+  display: flex;
+  align-items: center;
+}
+
+.post-details p {
+  margin-left: 10px
+}

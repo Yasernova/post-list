@@ -1,6 +1,33 @@
-.app {
-  display: flex;
-  flex-direction: flex-column;
-  align-items: center;
-  justify-content: center;
+.App {
+  width: 50vw;
+  margin: 50px auto;
+}
+
+button {
+  background-color: rgb(39, 39, 39);
+  border: 1px solid rgb(39, 39, 39);
+  color: gold;
+  font-weight: 900;
+  border-radius: 20px;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 24px;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: gold;
+  color: rgb(39, 39, 39);
+  margin-left: 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+button.delete {
+  background-color: rgb(235, 83, 83);
+  border: 1px solid rgb(235, 83, 83);
+  color: white;
+}
+
+button.delete:hover {
+  margin-left: 0px;
 }
